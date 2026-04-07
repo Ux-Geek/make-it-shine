@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Phone } from "lucide-react";
+import Logo from "./Logo";
 
 export default function Navbar() {
   return (
@@ -10,7 +11,8 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-border"
     >
       <div className="container-custom h-20 flex items-center justify-between">
-        <a href="/" className="font-serif text-2xl font-bold text-brand-heading tracking-tight">
+        <a href="/" className="flex items-center gap-2 font-serif text-2xl font-bold text-brand-heading tracking-tight">
+          <Logo className="w-10 h-auto text-brand-accent-hover" />
           Make It <span className="text-brand-accent-hover">Shine</span>
         </a>
         
