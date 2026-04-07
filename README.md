@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Make It Shine
 
-# Run and deploy your AI Studio app
+**Premium interior and household furniture cleaning service — Philadelphia, PA**
 
-This contains everything you need to run your app locally.
+A modern marketing website for Make It Shine, built with React, TypeScript, Vite, and Tailwind CSS.
 
-View your app in AI Studio: https://ai.studio/apps/e182355a-016c-4e6b-b295-0ae17533e168
+## Business
 
-## Run Locally
+- **Phone:** +1 (267) 642-4898
+- **Hours:** Monday – Saturday, 8:00 AM – 6:00 PM
+- **Services:** Interior Deep Cleaning · Office Spaces · Toilet & Bathroom · Sofa & Upholstery · Dirty Household Recovery · Detail Surface Care
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- [React 19](https://react.dev/) — UI
+- [TypeScript](https://www.typescriptlang.org/) — type safety
+- [Vite](https://vitejs.dev/) — build tool
+- [Tailwind CSS v4](https://tailwindcss.com/) — styling
+- [Motion](https://motion.dev/) — animations
+- [Lucide React](https://lucide.dev/) — icons
+
+## Getting Started
+
+**Prerequisites:** Node.js 18+
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   The app will be available at [http://localhost:3000](http://localhost:3000).
+
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start dev server on port 3000 |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | TypeScript type-check |
