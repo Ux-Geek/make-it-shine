@@ -65,6 +65,10 @@
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
+.avatar-circle {
+  border-radius: 9999px;
+}
+
 .hexagon-container {
   display: flex;
   flex-direction: column;
@@ -77,15 +81,15 @@
 
 .hexagon-item {
   width: 100px;
-  height: 115px;
-  margin: 2px;
+  height: 100px;
+  margin: 10px;
   position: relative;
 }
 
 @media (min-width: 768px) {
   .hexagon-item {
-    width: 160px;
-    height: 184px;
+    width: 140px;
+    height: 140px;
   }
 }
 
@@ -93,13 +97,13 @@
 .hexagon-row {
   display: flex;
   justify-content: center;
-  gap: 4px;
-  margin-bottom: -25px;
+  gap: 20px;
+  margin-bottom: -10px;
 }
 
 @media (min-width: 768px) {
   .hexagon-row {
-    margin-bottom: -45px;
+    margin-bottom: -15px;
   }
 }
 

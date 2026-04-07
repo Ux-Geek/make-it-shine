@@ -1,43 +1,42 @@
 import { motion } from "motion/react";
-import { Users, Star, Award } from "lucide-react";
+import { Star } from "lucide-react";
 
 export default function Ribbon() {
   const items = [
-    { icon: <Users size={20} />, label: "Happy Customers", value: "500+" },
-    { icon: <Star size={20} />, label: "Average Rating", value: "4.9/5" },
-    { icon: <Award size={20} />, label: "Satisfaction Guaranteed", value: "100%" },
+    { label: "HAPPY CUSTOMERS", value: "500+" },
+    { icon: <Star size={20} className="fill-[#FFD700] text-[#FFD700]" />, label: "AVERAGE RATING", value: "4.9/5" },
+    { label: "SATISFACTION GUARANTEED", value: "100%" },
   ];
 
-  // Duplicate items for seamless marquee
-  const marqueeItems = [...items, ...items, ...items, ...items, ...items, ...items];
+  // Large set for marquee
+  const marqueeItems = [...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items];
 
   return (
-    <div className="relative w-full overflow-hidden h-[72px] bg-black flex items-center">
-      {/* Green strip at the edge */}
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-green-500" />
-      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-green-500" />
-
+    <div className="relative w-full overflow-hidden h-[80px] bg-[#EEF2F5] flex items-center border-y border-brand-border">
       <motion.div 
         animate={{ x: ["0%", "-50%"] }}
         transition={{ 
-          duration: 30, 
+          duration: 40, 
           repeat: Infinity, 
           ease: "linear" 
         }}
-        className="flex items-center gap-16 whitespace-nowrap px-8"
+        className="flex items-center gap-10 whitespace-nowrap px-8"
       >
         {marqueeItems.map((item, index) => (
-          <div key={index} className="flex items-center gap-4 text-green-500">
-            <div className="flex items-center justify-center">
-              {item.icon}
+          <div key={index} className="flex items-center gap-10">
+            <div className="flex items-center gap-3 text-[#2F2F2F]">
+              {item.icon && <div className="flex-shrink-0">{item.icon}</div>}
+              <div className="flex items-baseline gap-2">
+                <span className="text-xl font-bold tracking-tight">{item.value}</span>
+                <span className="text-xl font-bold tracking-tight opacity-90">{item.label}</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-xl font-bold">{item.value}</span>
-              <span className="text-[10px] uppercase tracking-[2px] font-bold opacity-80">{item.label}</span>
-            </div>
+            {/* White Circle Separator */}
+            <div className="w-3 h-3 rounded-full bg-white border border-brand-border flex-shrink-0" />
           </div>
         ))}
       </motion.div>
     </div>
   );
 }
+

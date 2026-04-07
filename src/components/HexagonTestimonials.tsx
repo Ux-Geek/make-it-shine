@@ -73,7 +73,7 @@ export default function HexagonTestimonials() {
                         opacity: isOtherHovered ? 0.4 : 1
                       }}
                       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                      className="hexagon w-full h-full bg-white border-[4px] border-white shadow-xl overflow-hidden cursor-pointer relative"
+                      className="avatar-circle w-full h-full bg-white border-[2px] border-brand-border shadow-md overflow-hidden cursor-pointer relative"
                     >
                       <img 
                         src={t.image} 
