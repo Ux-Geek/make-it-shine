@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -19,13 +19,13 @@ export default function CTA() {
               Experience the transformation of a truly deep clean. Our team is ready to restore the shine to your home.
             </p>
           </div>
-          
+
           <div className="flex flex-col gap-4 w-full sm:w-auto">
-            <a 
-              href="tel:+12676424898" 
+            <a
+              href="tel:+12676424898"
               className="h-[64px] px-10 rounded-full bg-brand-accent text-brand-heading font-medium inline-flex items-center justify-center hover:bg-brand-accent-hover hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-brand-accent/20"
             >
-              Call Make It Shine: +1 (267) 642-4898
+              Call Us +1 (267) 642-4898
             </a>
             <p className="text-xs text-brand-text uppercase tracking-[2px] font-medium">
               Available Mon — Sat, 8am — 6pm
