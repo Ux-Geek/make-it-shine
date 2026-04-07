@@ -1,10 +1,13 @@
+import Logo from "./Logo";
+
 export default function Footer() {
   return (
     <footer className="py-12 border-t border-brand-border">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
-            <a href="/" className="font-serif text-xl font-bold text-brand-heading tracking-tight">
+            <a href="/" className="flex items-center gap-2 font-serif text-xl font-bold text-brand-heading tracking-tight">
+              <Logo className="w-8 h-auto text-brand-accent-hover" />
               Make It <span className="text-brand-accent-hover">Shine</span>
             </a>
             <p className="mt-2 text-sm text-brand-text">
