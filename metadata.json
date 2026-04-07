@@ -1,5 +1,38 @@
 {
   "name": "Make It Shine",
-  "description": "Premium interior and household furniture cleaning services.",
+  "description": "Premium interior and household furniture cleaning services. Deep cleaning for homes, offices, sofas, bathrooms, and more — based in Philadelphia, PA.",
+  "keywords": [
+    "cleaning service",
+    "interior cleaning",
+    "furniture cleaning",
+    "sofa cleaning",
+    "deep cleaning",
+    "home cleaning",
+    "office cleaning",
+    "upholstery cleaning",
+    "bathroom sanitization",
+    "Philadelphia cleaning service"
+  ],
+  "business": {
+    "legalName": "Make It Shine",
+    "type": "Cleaning Service",
+    "phone": "+1 (267) 642-4898",
+    "hours": "Monday – Saturday, 8:00 AM – 6:00 PM",
+    "location": "Philadelphia, PA",
+    "services": [
+      "Interior Deep Cleaning",
+      "Office Spaces Cleaning",
+      "Toilet & Bathroom Sanitization",
+      "Sofa & Upholstery Cleaning",
+      "Dirty Household Recovery",
+      "Detail Surface Care"
+    ]
+  },
+  "seo": {
+    "title": "Make It Shine — Premium Home & Furniture Cleaning Service",
+    "ogTitle": "Make It Shine — Premium Home & Furniture Cleaning",
+    "ogDescription": "Detail-led cleaning that refreshes your home, restores comfort, and keeps every space feeling lighter and beautifully maintained. Call +1 (267) 642-4898.",
+    "twitterCard": "summary_large_image"
+  },
   "requestFramePermissions": []
 }
